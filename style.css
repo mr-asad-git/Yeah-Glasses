@@ -1,3 +1,8 @@
+:root {
+  --button-color: #D37618;
+}
+
+
 @font-face {
   font-family: Poppins;
   font-style: normal;
