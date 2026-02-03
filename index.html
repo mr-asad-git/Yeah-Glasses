@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="assets/images/navImg/logoImg/sunglasses.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YEAH GLASSES - Choice of a Generation</title>
+</head>
+
+<body>
+    <header class="flex justify-between items-center px-4 py-3 sm:px-10 sm:py-6 border-b border-gray-200">
+        <div class="logo-div">
+            <img src="assets/images/navImg/logoImg/logo.png" class="h-14" alt="Logo">
+        </div>
+
+        <nav class="hidden sm:block">
+            <ul class="flex justify-center items-center gap-10 font-[Poppins] font-bold">
+                <li><a href="index.html" class="font-[400] text-[24px] hover:text-red-600">HOME</a></li>
+                <li><a href="about.html" class="font-[400] text-[24px] hover:text-red-600">ABOUT</a></li>
+                <li class="relative group">
+                    <a href="shop.html" class="font-[400] text-[24px] hover:text-red-600">SHOP</a>
+                    <ul
+                        class="absolute z-10 left-0 mt-2 w-40 bg-white border border-gray-200 rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <li><a href="men.html" class="block px-4 py-2 text-sm hover:bg-gray-100">Men</a></li>
+                        <li><a href="women.html" class="block px-4 py-2 text-sm hover:bg-gray-100">Women</a></li>
+                        <li><a href="kids.html" class="block px-4 py-2 text-sm hover:bg-gray-100">Kids</a></li>
+                    </ul>
+                </li>
+                <li><a href="sale.html" class="font-[400] text-[24px] hover:text-red-600">SALE</a></li>
+            </ul>
+        </nav>
+
+        <div class="icons-div flex items-center gap-3">
+            <button><img src="assets/images/navImg/navIcons/search.svg" class="w-8 h-8" alt="Search"></button>
+            <button><img src="assets/images/navImg/navIcons/add-to-cart.svg" class="w-8 h-8" alt="Cart"></button>
+            <button><img src="assets/images/navImg/navIcons/User.svg" class="w-8 h-8" alt="User"></button>
+
+            <button id="menuToggle" class="sm:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobileMenu"
+        class="hidden sm:hidden absolute top-20 left-0 w-full bg-white shadow-lg border-t border-gray-200 z-50">
+        <ul class="flex flex-col gap-4 p-6 font-[Poppins] font-bold">
+            <li><a href="index.html" class="text-lg hover:text-red-600">HOME</a></li>
+            <li><a href="about.html" class="text-lg hover:text-red-600">ABOUT</a></li>
+            <li><a href="shop.html" class="text-lg hover:text-red-600">SHOP</a></li>
+            <li><a href="sale.html" class="text-lg hover:text-red-600">SALE</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Image Section -->
+    <section class="heroImg relative h-[40vh] sm:h-[92vh] w-full">
+        <img src="assets/images/heroImg/baseImg.png" class="w-full h-full absolute object-cover" alt="Hero Background">
+
+        <p class="absolute text-white font-[Poppins] font-[700] font-bold 
+             top-[45%] left-[25%] sm:top-[20%] sm:left-[2%] 
+             text-[74px] sm:text-[64px] md:text-[120px] lg:text-[386px] leading-none">
+            CLASSY
+        </p>
+
+        <p class="absolute text-white font-bold font-[Poppins] 
+             left-[2%] 
+             top-[70%] sm:top-[80%] 
+             text-[20px] sm:text-[28px] md:text-[32px] lg:text-[38px] leading-snug">
+            Glasses You'll <br> Love to Wear
+        </p>
+
+        <div
+            class="scroll-buttons absolute right-[5%] sm:right-[12%] bottom-[5%] sm:bottom-[10%] flex justify-center items-center gap-2">
+            <div class="scroll w-[40px] sm:w-[100px] h-[10px] sm:h-[20px] bg-orange-700 rounded-full"></div>
+            <div class="scroll w-[10px] sm:w-[20px] h-[10px] sm:h-[20px] bg-black rounded-full"></div>
+            <div class="scroll w-[10px] sm:w-[20px] h-[10px] sm:h-[20px] bg-black rounded-full"></div>
+            <div class="scroll w-[10px] sm:w-[20px] h-[10px] sm:h-[20px] bg-black rounded-full"></div>
+        </div>
+
+        <div class="image">
+            <img src="assets/images/glasses/heroImage.png" class="w-full h-full p-4 sm:p-10 absolute object-contain"
+                alt="Hero Glasses">
+        </div>
+    </section>
+
+    <!-- Frames Section -->
+    <section class="flex justify-around items-center px-[3rem] py-[3rem]">
+        <div class="frame-text flex flex-col justify-left">
+            <div class="text-head text-[Poppins] font-[700] text-[48px]">
+                <h1>Frames You'll <br> Love To Wear</h1>
+            </div>
+            <div class="text-p w-[60%] text-[20px] text-[Poppins] font-[400]">Frames you'll love to wear are designed
+                with the
+                perfect
+                balance of style and comfort. Each frame is crafted to
+                complement your face and fit seamlessly into your daily
+                life. Whether you prefer timeless elegance or modern
+                trends, these frames make every look feel complete.</div>
+        </div>
+        <div class="frame-images flex justify-center flex-row gap-[2rem] items-center ">
+            <div class="prod1 sm:h-[350px] bg-gray-100 sm:w-[326px]">
+                <div class="image bg-white m-2 rounded-[4px] flex justify-center items-center ">
+                    <img class="w-[260px]" src="assets/images/cardImages/i1.svg" alt="">
+                </div>
+                <div class="text flex justify-between items-center px-3">
+                    <h1 class="text-[Poppins] font-[400] text-[20px]">Wild Cat</h1>
+                    <p class="price text-[Poppins] font-[400] text-[20px]">$120</p>
+                </div>
+                <div class="rating flex justify-left items-center gap-[10] px-3">
+                    <img src="assets/images/cardImages/rating/Star_fill.svg" alt="">
+                    <img src="assets/images/cardImages/rating/Star_fill.svg" alt="">
+                    <img src="assets/images/cardImages/rating/Star_fill.svg" alt="">
+                    <img src="assets/images/cardImages/rating/Star_fill.svg" alt="">
+                    <img src="assets/images/cardImages/rating/Empty_star.svg" alt="">
+                </div>
+                <div class="color-choice flex justify-left items-center gap-1 py-2 px-3">
+                    <button class="oval-color w-[20px] h-[20px] rounded-full bg-black"></button>
+                    <button class="oval-color w-[20px] h-[20px] rounded-full bg-red-300"></button>
+                    <button class="oval-color w-[20px] h-[20px] rounded-full bg-blue-300"></button>
+                </div>
+            </div>
+            <div class="prod2 sm:h-[350px] bg-gray-100 sm:w-[326px]">
+                <div class="image bg-white m-2 rounded-[4px] flex justify-center items-center ">
+                    <img class="w-[260px] py-[1.5rem]" src="assets/images/cardImages/i2.svg" alt="">
+                </div>
+                <div class="text flex justify-between items-center px-3">
+                    <h1 class="text-[Poppins] font-[400] text-[20px]">City Cat</h1>
+                    <p class="price text-[Poppins] font-[400] text-[20px]">$120</p>
+                </div>
+                <div class="rating flex justify-left items-center gap-[10] px-3">
+                    <img src="assets/images/cardImages/rating/Star_fill.svg" alt="">
+                    <img src="assets/images/cardImages/rating/Star_fill.svg" alt="">
+                    <img src="assets/images/cardImages/rating/Star_fill.svg" alt="">
+                    <img src="assets/images/cardImages/rating/Star_fill.svg" alt="">
+                    <img src="assets/images/cardImages/rating/Empty_star.svg" alt="">
+                </div>
+                <div class="color-choice flex justify-left items-center gap-1 py-2 px-3">
+                    <button class="oval-color w-[20px] h-[20px] rounded-full bg-black"></button>
+                    <button class="oval-color w-[20px] h-[20px] rounded-full bg-red-300"></button>
+                    <button class="oval-color w-[20px] h-[20px] rounded-full bg-blue-300"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+
+</html>
